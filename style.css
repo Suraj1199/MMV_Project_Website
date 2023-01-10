@@ -63,7 +63,7 @@ body {
     position: relative;
     background-color: white;
     margin: 3%;
-    font-size: 175%;
+    font-size: 145%;
     float: left;
     font-weight: bolder;
     border-radius: 20px;
@@ -104,7 +104,7 @@ body {
 }
 .sidebar {
     width: 22%;
-    height: 660px;
+    height: 560px;
     position: fixed;
     background-color: #505050;
     margin: 1% 73%;
