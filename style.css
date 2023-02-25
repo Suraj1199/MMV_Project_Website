@@ -59,7 +59,7 @@ body {
     padding: 2%;
     color: #333;
     width: 15%;
-    height: 41%;
+    height: 11vw;
     position: relative;
     background-color: white;
     margin: 3%;
@@ -96,7 +96,7 @@ body {
 }
 .info h1 {
     text-align: center;
-    font-size: 150%;
+    font-size: 2vw;
     font-weight: bolder;
 }
 .main {
