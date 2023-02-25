@@ -5,8 +5,8 @@ body {
 .header{
     text-align: center;
     font-weight: bolder;
-    font-size: 342.5%;
-    margin: 3% 15%;
+    font-size: 6vh;
+    margin: 3% 10%;
     color: #333;
     text-shadow: 2px 2px 3px #808080;
 }
@@ -59,11 +59,11 @@ body {
     padding: 2%;
     color: #333;
     width: 15%;
-    height: 150px;
+    height: 41%;
     position: relative;
     background-color: white;
     margin: 3%;
-    font-size: 145%;
+    font-size: 3vh;
     float: left;
     font-weight: bolder;
     border-radius: 20px;
@@ -82,14 +82,14 @@ body {
 }
 .info {
     text-align: justify;
-    width: 80%;
-    padding: 1% 5% 3% 5%;
+    width: 110vh;
+    padding: 2% 5%;
     color: #333;
-    font-size: 125%;
+    font-size: 2.5vh;
     line-height: 1.5;
     position: relative;
     background-color: white;
-    margin: 2% 4%;
+    margin: 2% 5%;
     float: left;
     border-radius: 50px;
     box-shadow: 5px 5px 20px #333;
@@ -104,7 +104,7 @@ body {
 }
 .sidebar {
     width: 22%;
-    height: 560px;
+    height: 70vh;
     position: fixed;
     background-color: #505050;
     margin: 1% 73%;
@@ -143,7 +143,7 @@ body {
     position: relative;
     background-color: white;
     margin: 2% 14%;
-    font-size: 200%;
+    font-size: 3.5vh;
     float: left;
     font-weight: bolder;
     border-radius: 20px;
@@ -158,16 +158,16 @@ body {
 }
 .people {
     background-color: #505050;
-    width:100%; 
-    height: 275px; 
+    width:44vw; 
+    height: 30vh; 
     border-radius: 20px; 
     color: white ; 
-    font-size: 120%; 
-    padding: 0.1%; 
+    font-size: 2vh; 
+    padding: 0.1vw 1vw; 
     text-shadow: 1px 1px 2px #333;
 }
 .people img {
-    width: 25%; 
+    width: 25vh; 
     float: left; 
     margin: 2%; 
     border-radius: 20px;
@@ -179,7 +179,7 @@ body {
     background-color: #505050;
 } */
 hr {
-    border-color: #505050;
+    border-color: #a3a3a3;
     border-width: 2px;
 }
 
