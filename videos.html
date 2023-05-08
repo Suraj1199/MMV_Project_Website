@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      Indian Institute of Technology, Kharagpur, West Bengal
+      <a href="contact.html">CONTACT</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a class="selected" href="videos.html">VIDEOS</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="homepage.html">HOME</a>
+    </div>
+
+    <!-- right side bar -->
+    <div class="sidebar">
+      <a href="#obj1"><b>Autonomous Lab Scale Car Maneuvers</b></a>
+      <ul>
+        <li><a href="#obj1.1">Obstacle Avoidance and Lane Following via Lidar</a></li>
+        <li><a href="#obj1.2">Lane Following via Camera using Deep Learning</a></li>
+        <li><a href="#obj1.3">Emergency Braking and Collision Free Driving</a></li>
+        <li><a href="#obj1.4">Simultaneous Localisation and Mapping (SLAM)</a></li>
+        <li><a href="#obj1.5">Image-Based Lane Keep Assist System</a></li>
+        <li><a href="#obj1.6">Trajectory Tracking using Pure Pursuit</a></li>
+        <li><a href="#obj1.7">Cooperative Adaptive Cruise Control (CACC)</a></li>
+      </ul>
+      <a href="#obj2"><b>Real-Time Testing and Evaluation</b></a>
+      <ul>
+        <li><a href="#obj2.1">Hardware-in-Loop (HiL)</a></li>
+        <li><a href="#obj2.2">Software-in-Loop (SiL)</a></li>
+      </ul>
+    </div>
+
+    <!-- Left side main area -->
+    <div class="main">
+      <h1 id="obj1" class="header">Autonomous Lab Scale Car Maneuvers</h1>  
+      <div id="obj1.1" class="info">
+        <h1>Obstacle Avoidance and Lane Following via Lidar</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1OFWj9T55iFNdFnaIrvoE-8h6Nhodjw5Q/preview"></iframe>
+        </div>
+        <br>
+        The laser scan data from lidar provides a 360-degree view to the the vehicle, which enables it to identify obstacles in the 
+        surrounding environment. In the above video, the vehicle's lane following algorithm is improved by the lidar which detects the boundaries,
+        as well as the obstacle in front to perform safe lane following.
+        <br>
+      </div> 
+      <div id="obj1.2" class="info">
+        <h1>Lane Following via Camera using Deep Learning</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1WEIPcOQ1aYtxnZpk5bHPpF_nGCxd4Nhk/preview"></iframe>
+        </div>
+        <br>
+        A deep convolutional neural network architecture, namely ResNet-18, is trained on lane images obtained from the car's camera. 
+        A dataset for supervised learning was created by annotating the desired pixel location in the image where the car should move towards.
+        The result is a model that can perform lane following through camera on both directions of the track. The training video can be found 
+        below which emphasises the accuracy of the model trained as more data was collected based on variety of conditions.
+        <br>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1cxdCwIndofB17kZFP6Kc_G_2cPg2dun9/preview"></iframe>
+        </div>
+      </div> 
+      <div id="obj1.3" class="info">
+        <h1>Emergency Braking and Collision Free Driving</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1T_2tlAKHmLzUuC48MdZ_1L8JaQaTni4T/preview"></iframe>
+        </div>
+        <br>
+        Detection of an obstacle using Lidar and then braking was implemented, which was further modified into a local path planning algorithm 
+        (based on real-time lidar data) was developed to calculate motion commands (steering and throttle) for the vehicle to roam collision free 
+        autonomously in the environment. Later, the same was acheived by training a deep convolutional neural network (ResNet-18).
+        <br>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1D8sBMy1LPBj76HIzqpYS_OIIDe0SP8FM/preview"></iframe>
+        </div>
+      </div>
+      <div id="obj1.4" class="info">
+        <h1>Simultaneous Localisation and Mapping (SLAM)</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1R0j1KQ4RgSX8EsYcEJoCmpNQDN3FohLt/preview"></iframe>
+        </div>
+        <br>
+        The car was driven in a customised environment with obstacles to create a map using the onboard sensors and an algorithm called SLAM.
+        The saved map can be used for localisation, path planning and other maneuvers.
+        <br>
+      </div>
+      <div id="obj1.5" class="info">
+        <h1>Image-Based Lane Keep Assist System</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1pCbTYMSP-ZlyxXtZqR7K9e4Yatf50LV6/preview"></iframe>
+        </div>
+        <br>
+        The image captured from car's camera is passed through an image processing pipeline to obtain lane markings and find a proper 
+        a trajectory accordingly. Then, mean cross-track deviation error is calculated which is fed to a proportional-derivative-integral (PID) 
+        controller for keeping the car on the track in between the lanes.
+        <br>
+      </div>
+      <div id="obj1.6" class="info">
+        <h1>Trajectory Tracking using Pure Pursuit</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1VMxXUtm7U-DVXYqP8CKtnKOiqUk8oMFY/preview"></iframe>
+        </div>
+        <br>
+        The car's position and orientation is obtained via real-time lidar data by constantly performing a localision algorithm on a saved map, where
+        a tajectory is defined in the form of waypoints. A geometric controller, namely Pure Pursuit, is used to calculate the steering angle and velocity
+        of the car (based on its current states) to track the specified path.
+        <br>
+      </div>
+      <div id="obj1.7" class="info">
+        <h1>Cooperative Adaptive Cruise Control (CACC)</h1>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1P5MRXv5pZ5cIuw0PJUtUhIPNnRUUmfZV/preview"></iframe>
+        </div>
+        <br>
+        A two vehicle platoon was created by establishing communication between leader and follower vehicles through TCP/IP. The follower
+        uses an ultrasonic sensor to measure the gap between itself front car and maintain a safe seperation distance, which is used along
+        with leader's state informations to calculate the required acceleration.
+        <br>
+      </div>
+      <br> <br> <br> <br>
+      <h1 id="obj2" class="header">Real-Time Testing and Evaluation</h1>  
+      <div id="obj2.1" class="info">
+        <h1>Hardware-in-Loop (HiL) </h1>
+        Real-time HiL emulation of Adaptive Cruise Control (ACC) System under Bus-Off Attack on CAN Protocol and Detection, performed on ETAS labcar.
+        <br>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1BAjEa_UdgftEu8KqWUak2-2HYepe_RcL/preview"></iframe>
+        </div>
+      </div>
+      <div id="obj2.2" class="info">
+        <h1>Software-in-Loop (SiL)</h1>
+        Virtual SiL testing of Adaptive Cruise Control (ACC) System designed for light-duty vehicles in IPG Carmaker 8.0 Simulator via MATALAB Simulink.
+        <br>
+        <div class="video">
+          <iframe src="https://drive.google.com/file/d/1g0pQAtNXCwJf5itUmuJYDOYXyl-J6GP6/preview"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="navbar" style="margin-top: 50%; width: 100%;">
+      Indian Institute of Technology, Kharagpur, West Bengal, 721302
+      <a href="contact.html">CONTACT</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a class="selected" href="research.html">RESEARCH</a>
+      <a href="homepage.html">HOME</a>
+    </div>
+  </body>
+</html>
